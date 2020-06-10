@@ -5,7 +5,7 @@ COPY src /build/src/
 
 WORKDIR /build/
 
-RUN mvn package package -DskipTests
+RUN mvn package -DskipTests
 
 FROM openjdk:11-jre-slim
 
