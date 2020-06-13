@@ -12,16 +12,13 @@ import java.util.List;
 @Table(name = "English")
 public class English implements Serializable {
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Getter
 	@Setter
-	private long id;
-	
-    @Getter
-    @Setter
+    @Column(name = "word", unique = true)
     private String word;
 	
-    @OneToOne(mappedBy = "english")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "german_word")
     @Getter
     @Setter
     private German german;

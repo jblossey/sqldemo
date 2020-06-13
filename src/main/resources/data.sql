@@ -1,4 +1,4 @@
-INSERT INTO ENGLISH (word) VALUES
-('hello'),('world'),('sample');
-INSERT INTO GERMAN(word, english_id) VALUES
-('hallo', 1),('welt', 2),('probe', 3);
+INSERT INTO GERMAN VALUES
+('hallo'),('welt'),('probe');
+INSERT INTO ENGLISH VALUES
+('hello','hallo'),('world','welt'),('sample','probe');

@@ -11,18 +11,13 @@ import java.util.List;
 @Table(name = "German")
 public class German implements Serializable {
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Getter
-	@Setter
-	private long id;
-	
     @Getter
     @Setter
+	@Column(name = "word", unique = true)
     private String word;
-	
-	@OneToOne
-	@JoinColumn(name = "english_id")
+
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "german")
     @Getter
     @Setter
-    private English english;
+    private List<English> english;
 }
