@@ -1,3 +1,11 @@
+![.github/workflows/deploytoAksCluster.yml](https://github.com/anwesys-tutors/milestone-3-demo/workflows/.github/workflows/deploytoAksCluster.yml/badge.svg)
+[![Build Status](https://travis-ci.com/anwesys-tutors/milestone-3-demo.svg?branch=master)](https://travis-ci.com/anwesys-tutors/milestone-3-demo)
+![Codecov](https://img.shields.io/codecov/c/gh/anwesys-tutors/milestone-3-demo)
+---
+![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/jblossey/milestone-3-sample)
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/jblossey/milestone-3-sample)
+![Docker Image Size (tag)](https://img.shields.io/docker/image-size/jblossey/milestone-3-sample/latest)
+---
 # Milestone 3 Sample Application
 
 ## Run the app
