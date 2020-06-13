@@ -11,14 +11,18 @@ import java.util.List;
 @Entity
 @Table(name = "English")
 public class English implements Serializable {
-
 	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Getter
+	@Setter
+	private long id;
+	
     @Getter
     @Setter
     private String word;
 	
-    @OneToOne(mappedBy ="translation")
+    @OneToOne(mappedBy = "englishTranslation")
     @Getter
     @Setter
-    private German translation;
+    private German germanTranslation;
 }

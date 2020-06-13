@@ -10,8 +10,12 @@ import java.util.List;
 @Entity
 @Table(name = "German")
 public class German implements Serializable {
-
 	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Getter
+	@Setter
+	private long id;
+	
     @Getter
     @Setter
     private String word;
@@ -20,5 +24,5 @@ public class German implements Serializable {
 	@JoinColumn(name = "english")
     @Getter
     @Setter
-    private English translation;
+    private English englishTranslation;
 }
