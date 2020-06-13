@@ -8,7 +8,7 @@ import java.io.Serializable;
 import java.util.List;
 
 @Entity
-@Table(name = "german")
+@Table(name =  "german")
 public class German implements Serializable {
     @Id
     @Getter
