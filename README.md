@@ -23,9 +23,9 @@ Note: the database is configured to forget all changes once you terminate it. Th
 
 This app exists to showcase the continuous integration and deployment of a microservice.
 
-*Continuous Integration* is done via **TODO**. You can find the configuration in **TODO**.  
-If you navigate to **TODO** you will find the different testing and compilation cycles which were triggered by commits to the master branch.
+*Continuous Integration* is done via Github CI (which ends in a delivery on Azure Kubernetes) and Travis-CI to publish code-coverage reports on codecov.io. You can find the configuration in the .travis-ci.yml.  
+If you navigate to [travis-ci.com](https://travis-ci.com/anwesys-tutors/milestone-3-demo) you will find the different testing and compilation cycles which were triggered by commits to the master branch.
 
-*Continuous Deployment* is aimed at **TODO**. The app can run on a kubernetes cluster.
+*Continuous Deployment* is aimed at an Azure Kubernetes Cluster which exposes a public IP-Address to reach the respective Service.
 
-The *Continuous Delivery* pipeline ends on (Docker Hub)[hub.docker.com/jblossey/milestone-3-sample]. Each push to the master branch triggers the re-building of the Docker image to be always up-to-date.
+The *Continuous Delivery* pipeline ends on [Docker Hub](hub.docker.com/jblossey/milestone-3-sample). Each push to the master branch triggers the re-building of the Docker image to be always up-to-date.
