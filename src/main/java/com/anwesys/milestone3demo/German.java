@@ -8,19 +8,16 @@ import java.io.Serializable;
 import java.util.List;
 
 @Entity
-@Table(name = "german")
+@Table(name = "German")
 public class German implements Serializable {
-    @Id
-    @Getter
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private int germanId;
-
+	@Id
     @Getter
     @Setter
+	@Column(name = "word", unique = true)
     private String word;
 
-    @OneToOne
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "german")
     @Getter
     @Setter
-    private English translation;
+    private List<English> english;
 }

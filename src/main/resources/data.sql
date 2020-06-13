@@ -1,8 +1,4 @@
-INSERT INTO "ENGLISH"(word) VALUES
-('hello'),('world'),('sample');
-INSERT INTO "GERMAN"(word) VALUES
+INSERT INTO GERMAN VALUES
 ('hallo'),('welt'),('probe');
-INSERT INTO "ENGLISH_GERMAN" VALUES
-(1,1),
-(2,2),
-(3,3);
+INSERT INTO ENGLISH VALUES
+('hello','hallo'),('world','welt'),('sample','probe');
