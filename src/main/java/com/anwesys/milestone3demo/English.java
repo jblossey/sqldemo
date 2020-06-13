@@ -21,8 +21,8 @@ public class English implements Serializable {
     @Setter
     private String word;
 	
-    @OneToOne(mappedBy = "englishTranslation")
+    @OneToOne(mappedBy = "english")
     @Getter
     @Setter
-    private German germanTranslation;
+    private German german;
 }

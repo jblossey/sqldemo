@@ -21,8 +21,8 @@ public class German implements Serializable {
     private String word;
 	
 	@OneToOne
-	@JoinColumn(name = "english")
+	@JoinColumn(name = "english_id")
     @Getter
     @Setter
-    private English englishTranslation;
+    private English english;
 }
