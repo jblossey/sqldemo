@@ -10,11 +10,12 @@ import java.util.List;
 @Entity
 @Table(name =  "german")
 public class German implements Serializable {
-    @Id
+    
     @Getter
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int germanId;
-
+   
+    @Id
     @Getter
     @Setter
     private String word;
