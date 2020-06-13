@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.anwesys</groupId>
-	<artifactId>sqldemo</artifactId>
+	<artifactId>milestone-3-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>sqldemo</name>
-	<description>Demo project for sql handling</description>
+	<name>milestone-3-demo</name>
+	<description>Demo project for milestone three</description>
 
 	<properties>
 		<java.version>11</java.version>
