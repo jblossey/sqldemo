@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: "anwesystutorialproject"
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: "anwesystutorialproject"
+    spec:
+      containers:
+        - name: "anwesystutorialproject"
+          image: "milestone3registry.azurecr.io/anwesystutorialproject"
+          ports:
+          - containerPort: 4711
