@@ -34,6 +34,7 @@ public class RestApiTests extends AbstractRestTest {
         englishRepository.save(en);
     }
 
+    @Ignore
     @Test
     public void getWordList() throws Exception {
         String uri = "/dict";
