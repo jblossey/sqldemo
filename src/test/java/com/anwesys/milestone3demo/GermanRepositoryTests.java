@@ -9,9 +9,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest
-public class GermanRepositoryTests {
+public class GermanRepositoryTests extends Milestone3demoApplicationTests{
 
     @Autowired
     private GermanRepository germanRepository;
