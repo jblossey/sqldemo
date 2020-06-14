@@ -7,4 +7,7 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 @RepositoryRestResource(collectionResourceRel = "germanDictionary", path = "dict")
 public interface GermanRepository extends CrudRepository<German, Long> {
 
+    German findGermanByEnglish(English word);
+
+    German findByWord(String word);
 }
