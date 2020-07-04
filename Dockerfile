@@ -1,4 +1,4 @@
-FROM maven:3.6.3-openjdk-11-slim
+FROM maven:3.6-adoptopenjdk-11
 
 COPY pom.xml /build/
 COPY src /build/src/
@@ -7,7 +7,7 @@ WORKDIR /build/
 
 RUN mvn package -DskipTests
 
-FROM openjdk:11-jre-slim
+FROM openjdk:11-jre-slim-stretch
 
 COPY --from=0 build/target/milestone-3-demo-0.0.1-SNAPSHOT.jar /app/
 CMD ["java", "-Xmx500m", "-jar", "/app/milestone-3-demo-0.0.1-SNAPSHOT.jar"]
