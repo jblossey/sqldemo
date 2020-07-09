@@ -1,11 +1,11 @@
 server:
-  port: 4712
+  port: 4711
 spring:
   application:
-    name: sqldemo
+    name: milestone-3-demo
   datasource:
-    url: "jdbc:h2:file:./task_db"
-#    url: "jdbc:h2:mem:testdb"
+#    url: "jdbc:h2:file:./ms3"
+    url: "jdbc:h2:mem:testdb"
     driver-class-name: org.h2.Driver
     username: "SA"
     password: ""
@@ -26,13 +26,3 @@ spring:
       settings:
         trace: false
         web-allow-others: true
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-  endpoint:
-    health:
-      show-details: always
-    shutdown:
-      enabled: true

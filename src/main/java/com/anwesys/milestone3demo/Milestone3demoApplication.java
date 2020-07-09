@@ -1,14 +1,13 @@
-package com.anwesys.sqldemo;
+package com.anwesys.milestone3demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.data.jpa.repository.Query;
 
 @SpringBootApplication(scanBasePackages = "com.anwesys")
-public class SqldemoApplication {
+public class Milestone3demoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SqldemoApplication.class, args);
+		SpringApplication.run(Milestone3demoApplication.class, args);
 	}
 
 }
